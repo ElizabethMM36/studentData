@@ -24,19 +24,21 @@ A robust RESTful API built with **Node.js**, **Express**, and **Firebase Realtim
    ```bash
    git clone <your-repo-link>
    cd studentData
-## 📡 API Reference Table
+📡 API Reference Table
 
 All operations are handled via a `POST` request to the central management endpoint.
 
 **Endpoint:** `POST /api/students/manage`
+Here is the summary of the API endpoints:
 
-| qType | Action Description | Body Parameters (Required) | Optional Parameters |
-| :--- | :--- | :--- | :--- |
-| **add** | Register a new student | `studentID`, `name`, `city` | `age`, `course`, `email`, etc. |
-| **search** | Query student records | `studentID` OR `city` | — |
-| **update** | Modify existing data | `studentID` | Any field you wish to change |
-| **delete** | Remove from database | `studentID` | — |
-| **readAll** | Fetch full database | — | — |
-| **stats** | Analytics & Totals | — | — |
+| qType | Action | Required Body Fields |
+| :--- | :--- | :--- |
+| **add** | Create Student | `studentID`, `name`, `city` |
+| **search** | Find Student | `studentID` or `city` |
+| **update** | Edit Data | `studentID` |
+| **delete** | Remove Data | `studentID` |
+| **readAll** | Get All | (none) |
+| **stats** | Analytics | (none) |
 
+---
 ---
